@@ -16,7 +16,7 @@ public class LoginStep {
 	
 	WebDriver driver;
 	
-	
+
 	
 	@Given("User navigates to login page {string}")
 	public void user_navigates_to_login_page(String url) throws InterruptedException {
@@ -46,6 +46,8 @@ public class LoginStep {
 		  loginButton.click();
 	}
 
+
+	 
 	@Then("System redirects to dashboard page {string}")
 	public void system_redirects_to_dashboard_page(String pageHeader) throws InterruptedException {
 	   System.out.println("Page Header... " +  pageHeader);
@@ -69,6 +71,7 @@ public class LoginStep {
 		}
 	   
 		System.out.println("DONE...");
+		 System.out.println("skd");
 	}
  
 }
